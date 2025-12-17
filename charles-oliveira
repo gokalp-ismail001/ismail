@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Oliveira | Do Bronx</title>
+    <style>
+        /* Arka plan için Brezilya bayrağı */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* İçerik kutusu (Okunabilirlik için) */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin: 20px;
+        }
+
+        /* Oliveira Fotoğrafı */
+        .oliveira-img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            /* Yanlardan çizgili kenarlık efekti */
+            border: 8px double #009c3b; 
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #002776;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .video-link {
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .video-link a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #009c3b;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .video-link a:hover {
+            background-color: #ffdf00;
+            color: #002776;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Charles_Oliveira_at_UFC_225.jpg/800px-Charles_Oliveira_at_UFC_225.jpg" alt="Charles Oliveira" class="oliveira-img">
+
+        <h1>Charles Oliveira</h1>
+        <p><strong>"Do Bronx"</strong> lakabıyla tanınan Charles Oliveira da Silva, Brezilyalı profesyonel bir karma dövüş sanatçısıdır (MMA). UFC hafif sıklet kategorisinde eski şampiyondur. UFC tarihindeki en çok pes ettirme (submission) ve en çok bitiriş (finish) rekorlarını elinde bulundurmaktadır.</p>
+
+        <div class="video-link">
+            <a href="https://www.google.com">Google'a git</a>
+        </div>
+    </div>
+
+</body>
+</html>

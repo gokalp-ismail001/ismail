@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charles Oliveira | Do Bronx</title>
     <style>
-        /* Arka plan için Brezilya bayrağı */
+        /* Brezilya Bayrağı Arka Plan */
         body {
             margin: 0;
             padding: 0;
@@ -13,76 +13,90 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
         }
 
-        /* İçerik kutusu (Okunabilirlik için) */
-        .container {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 15px;
+        /* İçerik Kutusu */
+        .card {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
             text-align: center;
-            max-width: 600px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 500px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
             margin: 20px;
         }
 
-        /* Oliveira Fotoğrafı */
-        .oliveira-img {resimler (1).jpeg
+        /* Oliveira Fotoğrafı ve Yanlardaki Çizgili Efekt */
+        .photo-container {
+            display: inline-block;
+            position: relative;
+            padding: 0 15px; /* Yanlardaki boşluk çizgiler için */
+        }
+
+        .oliveira-img {
             width: 100%;
-            max-width: 400px;
+            max-width: 350px;
             height: auto;
-            /* Yanlardan çizgili kenarlık efekti */
-            border: 8px double #009c3b; 
-            border-radius: 10px;
-            margin-bottom: 20px;
+            display: block;
+            /* Yanlardan kalın yeşil ve sarı çizgiler */
+            border-left: 10px repeating-linear-gradient(45deg, #009c3b, #009c3b 10px, #ffdf00 10px, #ffdf00 20px);
+            border-right: 10px repeating-linear-gradient(45deg, #009c3b, #009c3b 10px, #ffdf00 10px, #ffdf00 20px);
+            border-left-style: solid;
+            border-right-style: solid;
         }
 
         h1 {
             color: #002776;
-            margin-bottom: 10px;
+            margin-top: 20px;
         }
 
         p {
-            color: #333;
-            line-height: 1.6;
-            font-size: 1.1em;
+            color: #444;
+            line-height: 1.5;
+            font-size: 18px;
         }
 
-        .video-link {
-            margin-top: 20px;
-            display: inline-block;
+        /* Alt kısımdaki link alanı */
+        .footer-link {
+            margin-top: 25px;
         }
 
-        .video-link a {
+        .footer-link a {
             text-decoration: none;
-            color: #fff;
-            background-color: #009c3b;
-            padding: 10px 20px;
-            border-radius: 5px;
             font-weight: bold;
-            transition: background 0.3s;
+            color: #009c3b;
+            border: 2px solid #009c3b;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
         }
 
-        .video-link a:hover {
-            background-color: #ffdf00;
-            color: #002776;
+        .footer-link a:hover {
+            background-color: #009c3b;
+            color: white;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Charles_Oliveira_at_UFC_225.jpg/800px-Charles_Oliveira_at_UFC_225.jpg" alt="Charles Oliveira" class="oliveira-img">
+    <div class="card">
+        <div class="photo-container">
+            <img src="resimler (1).jpeg" alt="Charles Oliveira" class="oliveira-img">
+        </div>
 
         <h1>Charles Oliveira</h1>
-        <p><strong>"Do Bronx"</strong> lakabıyla tanınan Charles Oliveira da Silva, Brezilyalı profesyonel bir karma dövüş sanatçısıdır (MMA). UFC hafif sıklet kategorisinde eski şampiyondur. UFC tarihindeki en çok pes ettirme (submission) ve en çok bitiriş (finish) rekorlarını elinde bulundurmaktadır.</p>
+        <p>
+            Charles "Do Bronx" Oliveira, UFC hafif sıklet tarihinin en dominant isimlerinden biridir. 
+            Brezilya'nın favelalarından çıkarak dünya şampiyonluğuna uzanan efsanevi bir kariyere sahiptir. 
+            UFC tarihindeki en çok bitiriş (finish) rekorunun sahibidir.
+        </p>
 
-        <div class="video-link">
+        <div class="footer-link">
             <a href="https://https://www.youtube.com/watch?v=ws7coFa980k&t=46s">
 ŞAMPİYONUN BİR ADI VAR!: Charles Oliveira Belgeseli</a>
         </div>

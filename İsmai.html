@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Merhaba Dünya</title>
+  <style>
+    html,body { height:100%; margin:0; font-family:system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; display:flex; align-items:center; justify-content:center; background:#f3f4f6; }
+    .card { background:white; padding:24px 36px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); text-align:center; }
+    h1 { margin:0 0 8px 0; font-size:28px; }
+    p { margin:0 0 16px 0; color:#555; }
+    button { padding:10px 14px; border-radius:8px; border:0; cursor:pointer; font-weight:600; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 id="greeting">Merhaba Dünya</h1>
+    <p>Basit bir HTML sayfası örneği.</p>
+    <button id="changeBtn">Selamı değiştir</button>
+  </div>
+
+  <script>
+    const btn = document.getElementById('changeBtn');
+    const greeting = document.getElementById('greeting');
+    const messages = ['Merhaba Dünya','Selamlar!','Nasılsın?','Günaydın!'];
+    let i = 0;
+    btn.addEventListener('click', () => {
+      i = (i + 1) % messages.length;
+      greeting.textContent = messages[i];
+    });
+  </script>
+</body>
+</html>
